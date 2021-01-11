@@ -1,0 +1,15 @@
+.formContainer {
+  margin-top: 20%;
+}
+
+.submitButton {
+  background-color: #d4acab !important;
+  outline-color: red !important;
+}
+
+.shadow {
+  box-shadow: 50px 50px;
+}
+
+.test1 {
+}
