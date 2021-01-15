@@ -1,24 +1,15 @@
 import {MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBInput, MDBBtn, MDBContainer} from 'mdbreact';
-import {Navbar, Nav} from 'react-bootstrap';
 import {Spring} from 'react-spring/renderprops'
+import Header from "../layouts/header.jsx"
+
 import '../styles/contacts.css';
 
 
 const ContactPage = ()  => {
-  return (
-    <section className="my-5">
-    <Navbar className="colorNav fixed-top test1" expand="lg">
-      <Navbar.Brand className="navTextPrimary" href="#home">Framboesa Selvagem</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Shop</Nav.Link>
-          <Nav.Link className="active" href="#link">Contact</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
 
+  return (
+    <section>
+    <Header></Header>
     <Spring
     from={{opacity: 0, marginTop: -500}}
     to={{opacity: 1, marginTop: 0}}>
